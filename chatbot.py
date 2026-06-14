@@ -76,14 +76,19 @@ def chatbot(user_query):
 print("\nFAQ Chatbot Started")
 print("Type 'exit' to stop\n")
 
-while True:
+if __name__ == "__main__":
 
-    user_input = input("You: ")
+    print("\nFAQ Chatbot Started")
+    print("Type 'exit' to stop\n")
 
-    if user_input.lower() == "exit":
-        print("Chatbot: Goodbye!")
-        break
+    while True:
 
-    response = chatbot(user_input)
+        user_input = input("You: ")
 
-    print("Chatbot:", response)
+        if user_input.lower() == "exit":
+            print("Chatbot: Goodbye!")
+            break
+
+        response = chatbot(user_input)
+
+        print("Chatbot:", response)
